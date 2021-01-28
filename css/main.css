@@ -69,7 +69,7 @@ nav .row ul li::after {
   padding-top: 3%;
   padding-right: 63%;
 }
-.jumbotron h5 {
+.jumbotron h5, .section-card div:first-child h5{
   line-height: 2em;
   margin-bottom: 25px;
 }
@@ -88,12 +88,16 @@ nav .row ul li::after {
   border-top: 3px solid black;
 }
 .section-card div:first-child {
-  height: 100px;
-  background-color: brown;
+  background-color: #f4f9fd;
+  text-align: center;
+  padding: 15px 26% ;
 }
 .section-card div:nth-child(2) {
   height: 100px;
   background-color: blue;
+}
+.section-card div:first-child img {
+  height: 170px;
 }
 .row {
   height: 100px;
