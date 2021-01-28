@@ -23,7 +23,7 @@ a {
 header span, a {
   margin: 0 15px;
 }
-.right-header {
+.right-header, nav .row ul li {
   display: inline-block;
 }
 .right-header {
@@ -39,16 +39,31 @@ header span, a {
   color: white;
   border: none;
 }
-
 .row::after {
   display: table;
   content: "";
   clear: both;
 }
-nav {
-  height: 100px;
-  background-color: yellow;
+nav>.row {
+  text-align: right;
 }
+nav .row img {
+  float: left;
+}
+nav {
+}
+nav .row ul {
+  text-decoration: none;
+}
+nav .row ul li {
+  padding-right: 10px;
+}
+nav .row ul li::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: " \f0dd";
+}
+
 .jumbotron {
   height: 100px;
   background-color: purple;
