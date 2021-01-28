@@ -6,7 +6,6 @@
 }
 body {
   font-family:'Roboto', sans-serif;
-
 }
 header, nav, .jumbotron, .split-up, main section div,  footer {
   padding: 15px 10% ;
@@ -50,8 +49,6 @@ nav>.row {
 nav .row img {
   float: left;
 }
-nav {
-}
 nav .row ul {
   text-decoration: none;
 }
@@ -63,14 +60,32 @@ nav .row ul li::after {
   font-weight: 900;
   content: " \f0dd";
 }
-
 .jumbotron {
-  height: 100px;
-  background-color: purple;
+  height: 500px;
+  background-image: url(../img/jumbotron.png);
+  background-position: 100% 66%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 3%;
+  padding-right: 63%;
+}
+.jumbotron h5 {
+  line-height: 2em;
+  margin-bottom: 25px;
+}
+.jumbotron h5:nth-child(2) {
+  margin-top: 25px;
+}
+.jumbotron a {
+  margin-left: 0px;
+  padding: 1.5em 2em;
+  line-height: 8em;
+
 }
 .split-up {
   height: 100px;
-  background-color: green;
+  background-color: #afebe4;
+  border-top: 3px solid black;
 }
 .section-card div:first-child {
   height: 100px;
