@@ -7,11 +7,10 @@
 body {
   font-family:'Roboto', sans-serif;
 }
-header, nav, .jumbotron, .split-up, main section div,  footer {
+header, nav, .jumbotron, .split-up, main section,  footer {
   padding: 15px 10% ;
 }
 header {
-  height: 100px;
   background-color: #f4f9fd;
 }
 a {
@@ -22,7 +21,7 @@ a {
 header span, a {
   margin: 0 15px;
 }
-.right-header, nav .row ul li {
+.right-header, nav .row ul li, .img-card {
   display: inline-block;
 }
 .right-header {
@@ -76,31 +75,46 @@ nav .row ul li::after {
 .jumbotron h5:nth-child(2) {
   margin-top: 25px;
 }
-.jumbotron a {
+.jumbotron a, .img-card>a {
+  margin-right: 0;
   margin-left: 0px;
   padding: 1.5em 2em;
   line-height: 8em;
-
 }
 .split-up {
   height: 100px;
   background-color: #afebe4;
   border-top: 3px solid black;
 }
-.section-card div:first-child {
+main {
   background-color: #f4f9fd;
+}
+.motto {
   text-align: center;
-  padding: 15px 26% ;
+  padding: 15px 20% ;
 }
-.section-card div:nth-child(2) {
-  height: 100px;
-  background-color: blue;
-}
-.section-card div:first-child img {
+.section-card>div>img {
   height: 170px;
 }
+.first-features {
+  border: 1px solid black;
+  background-color: white;
+}
+.img-card {
+  float:left;
+  text-align: center;
+  height: 100%;
+  width: 30%;
+  padding: 20px 5%;
+}
+.img-card img {
+  width: 70%;
+}
+.description-card {
+  margin-top: 20px;
+  float: left;
+}
 .row {
-  height: 100px;
   background-color: pink;
 }
 .number  {
