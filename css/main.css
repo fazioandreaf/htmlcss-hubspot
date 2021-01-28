@@ -4,12 +4,46 @@
   padding: 0px;
   box-sizing: border-box;
 }
+body {
+  font-family:'Roboto', sans-serif;
+
+}
 header, nav, .jumbotron, .split-up, main section div,  footer {
   padding: 15px 10% ;
 }
 header {
   height: 100px;
-  background-color: red;
+  background-color: #f4f9fd;
+}
+a {
+  padding: 0.5em 1em;
+  text-decoration: none;
+  color: white;
+}
+header span, a {
+  margin: 0 15px;
+}
+.right-header {
+  display: inline-block;
+}
+.right-header {
+  float:right;
+}
+.bottone {
+  border-radius: 5px;
+  border: 1px solid #ff7a59;
+  color: #ff7a59;
+}
+.arancione {
+  background-color: #ff7a59;
+  color: white;
+  border: none;
+}
+
+.row::after {
+  display: table;
+  content: "";
+  clear: both;
 }
 nav {
   height: 100px;
@@ -41,7 +75,7 @@ nav {
 }
 .partner  {
   height: 100px;
-  background-color: orange;
+  background-color: #ff7a59;
 }
 footer  {
   height: 100px;
