@@ -21,7 +21,7 @@ a {
 header span, a {
   margin: 0 15px;
 }
-.right-header, nav .row ul li, .img-card, .description-card h4, .description-card hr, .description-card ul li, .card {
+.right-header, nav .row ul li, .img-card, .description-card h4, .description-card hr, .description-card ul li, .card, footer>ul>li{
   display: inline-block;
 }
 .right-header {
@@ -48,7 +48,7 @@ nav>.row {
 nav .row img {
   float: left;
 }
-nav .row ul, .card ul{
+nav .row ul, .card ul, footer ul{
   list-style-type: none;
 }
 nav .row ul li {
@@ -126,7 +126,7 @@ hr {
   width: 60%;
   margin-left: 5%;
 }
-.description-card ul li, .card ul li {
+.description-card ul li, .card ul li, .footer-card li{
   margin-top: 20px;
   margin-right: 20px;
   text-transform: capitalize;
@@ -223,7 +223,29 @@ hr {
   float: right;
   width: 230px;
 }
-footer  {
-  height: 100px;
-  background-color: black;
+footer {
+  background-color: #32495b;
+  color: white;
+}
+.footer-card {
+  float: left;
+  text-align: left;
+  width: 25%;
+}
+.footer-card a{
+  margin:0;
+  padding: 0;
+}
+.footer-card h4 {
+  margin: 22px 0;
+}
+footer>ul {
+  text-align: center;
+  margin-top: 10%;
+  padding-bottom: 2%;
+  margin-bottom: 4%;
+  border-bottom: 2px solid  white;
+}
+footer>.row>a {
+  float: right;
 }
