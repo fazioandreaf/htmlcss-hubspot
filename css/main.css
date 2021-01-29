@@ -198,8 +198,6 @@ hr {
 .row-1 .signt:last-child, .row-2 .signt:last-child{
   border-right: none;
 }
-.partner {
-}
 .partner-first-row-left {
   width: 40%;
   padding: 0 5%;
@@ -212,12 +210,18 @@ hr {
 .partner-first-row-left>h2 {
   margin: 20px 0;
 }
-.partner-first-row-right {
-}
 .partner-first-row-right img {
   width: 12%;
   padding: 1%;
   vertical-align: middle;
+}
+.partner-second-row-left {
+  float: left;
+  width: 40%;
+}
+.partner-second-row-left+img {
+  float: right;
+  width: 230px;
 }
 footer  {
   height: 100px;
