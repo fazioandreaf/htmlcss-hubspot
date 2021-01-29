@@ -165,7 +165,7 @@ hr {
   text-align: center;
   color: white
 }
-.number h2 {
+.number h2, .partner-first-row-left h2{
   font-size: 2em;
   padding: 1% 5%;
 }
@@ -198,9 +198,26 @@ hr {
 .row-1 .signt:last-child, .row-2 .signt:last-child{
   border-right: none;
 }
-.partner  {
-  height: 100px;
-  background-color: #ff7a59;
+.partner {
+}
+.partner-first-row-left {
+  width: 40%;
+  padding: 0 5%;
+  float: left;
+}
+.partner-first-row-left>h5 {
+  line-height: 1em;
+  margin: 10px;
+}
+.partner-first-row-left>h2 {
+  margin: 20px 0;
+}
+.partner-first-row-right {
+}
+.partner-first-row-right img {
+  width: 12%;
+  padding: 1%;
+  vertical-align: middle;
 }
 footer  {
   height: 100px;
