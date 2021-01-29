@@ -21,7 +21,7 @@ a {
 header span, a {
   margin: 0 15px;
 }
-.right-header, nav .row ul li, .img-card, .description-card h4, .description-card hr, .description-card ul li {
+.right-header, nav .row ul li, .img-card, .description-card h4, .description-card hr, .description-card ul li, .card {
   display: inline-block;
 }
 .right-header {
@@ -48,8 +48,8 @@ nav>.row {
 nav .row img {
   float: left;
 }
-nav .row ul {
-  text-decoration: none;
+nav .row ul, .card ul{
+  list-style-type: none;
 }
 nav .row ul li {
   padding-right: 10px;
@@ -68,14 +68,15 @@ nav .row ul li::after {
   padding-top: 3%;
   padding-right: 63%;
 }
-.jumbotron h5, .section-card div:first-child h5{
+.jumbotron h1 {
+  margin: 2% 0%;
+}
+.jumbotron h5, .section-card div h5, .card h5, .description-card h5 {
   line-height: 2em;
-  margin-bottom: 25px;
+  margin: 2% 0%;
+  font-weight: lighter;
 }
-.jumbotron h5:nth-child(2) {
-  margin-top: 25px;
-}
-.jumbotron a, .img-card>a {
+.grande{
   margin-right: 0;
   margin-left: 0px;
   padding: 1.5em 2em;
@@ -110,28 +111,54 @@ main {
 .img-card img {
   width: 70%;
 }
+hr {
+  background-color: #899397;
+  padding: 1px;
+}
 .description-card {
   margin-top: 5%;
   float: left;
+}
+.description-card h5 {
+  width: 68%;
 }
 .description-card hr {
   width: 60%;
   margin-left: 5%;
 }
-.description-card ul li {
+.description-card ul li, .card ul li {
   margin-top: 20px;
   margin-right: 20px;
   text-transform: capitalize;
 }
-.description-card ul li::before {
+.description-card ul li::before, .card ul li:before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f058";
   color: #ff7a59;
   padding-right: 10px;
 }
-.row {
-  background-color: pink;
+.card {
+  text-align: center;
+  width: 30%;
+  margin-top: 30px;
+  border: 3px solid black;
+  background-color: white;
+  float: left;
+  padding: 2% 5%;
+}
+.row .card:nth-child(2) {
+  margin: 30px 5%;
+}
+.card img {
+  height: 100px;
+  margin: 7%;
+}
+.card hr, .card ul{
+  margin: 10% 0px;
+}
+.card ul {
+  text-align: left;
 }
 .number  {
   height: 100px;
