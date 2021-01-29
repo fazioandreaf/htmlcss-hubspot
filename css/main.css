@@ -13,6 +13,10 @@ header, nav, .jumbotron, .split-up, main section,  footer {
 header {
   background-color: #f4f9fd;
 }
+header,nav {
+  height: 30px;
+  position:fixed;
+}
 a {
   padding: 0.5em 1em;
   text-decoration: none;
