@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Hubspot</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" >
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main-bonus.css">
   </head>
   <body>
     <!-- parte alta -->
@@ -24,11 +24,103 @@
         <div class="row">
           <a href="#" id="logo"><img src="img/logo.svg" alt=""></a>
           <ul>
-            <li><a href="#">Software</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Resources</a></li>
-            <li><a href="#">Parteners</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#">Software</a>
+              <button class="dropdown" name="button">
+                <div class="dropdown-content">
+                  <div class="row">
+                    <div class="d-c-left">
+                      <h4>The full CRM Platform</h4>
+                      <a href="#">Overview of all products</a>
+                      <h4>Free CRM</h4>
+                      <a href="#">Overview of HubSpot's free tools</a>
+                    </div>
+                    <div class="d-c-right">
+                        <div class="d-c-right-card">
+                          <div class="row">
+                            <div class="d-c-r-c-img">
+                              <img src="img/1.png" alt="">
+                            </div>
+                            <div class="d-c-r-c-description">
+                              <h4>Marketing hub</h4>
+                              <span> Marketing automation software</span>
+                              <a href="#">Free and premium plane</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-c-right-card">
+                          <div class="row">
+                            <div class="d-c-r-c-img">
+                              <img src="img/2.png" alt="">
+                            </div>
+                            <div class="d-c-r-c-description">
+                              <h4>Sales Hub</h4>
+                              <span> Sales CRM software.</span>
+                              <a href="#">Free and premium plane</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-c-right-card">
+                          <div class="row">
+                            <div class="d-c-r-c-img">
+                              <img src="img/3.png" alt="">
+                            </div>
+                            <div class="d-c-r-c-description">
+                              <h4>Service hub</h4>
+                              <span>Customer service software</span>
+                              <a href="#">Free and premium plane</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-c-right-card">
+                          <div class="row">
+                            <div class="d-c-r-c-img">
+                              <img src="img/4.png" alt="">
+                            </div>
+                            <div class="d-c-r-c-description">
+                              <h4>CMS Hub</h4>
+                              <span>Conten management system software</span>
+                              <a href="#">Premium plans</a>
+                            </div>
+                          </div>
+                        </div>
+                      <div class="sottotitolo">
+                        <span>App market</span>  Connect your favorite to HubSpot. <a href="#"> See all integrations</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </button>
+            </li>
+            <li><a href="#">Pricing</a>
+            </li>
+            <li><a href="#">Resources</a>
+              <button class="dropdown" name="button">
+                <div class="dropdown-content">
+                  <ul><h4>Education</h4>
+                    <li>Blog</li>
+                    <li>Ebook, Guides & More</li>
+                    <li>Free Courses & Certifications</li>
+                    <li>Inbound Methodology</li>
+                  </ul>
+                  <ul><h4></h4>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <ul><h4></h4>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <ul><h4></h4>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+              </button>
+            </li>
+            <li><a href="#partner">Parteners</a>
+            </li>
+            <li><a href="#about">About</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -175,7 +267,7 @@
         </div>
       </section>
       <!-- partener -->
-      <section class="partner">
+      <section id="partner">
         <div class="partner-first-row">
           <div class="row">
             <div class="partner-first-row-left">
@@ -215,7 +307,7 @@
       </section>
     </main>
     <footer>
-        <div class="row">
+        <div id="about" class="row">
           <div class="footer-card">
             <h4>Increase your trafic</h4>
             <ul>

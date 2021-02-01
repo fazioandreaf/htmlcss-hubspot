@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 * {
   margin: 0px;
   padding: 0px;
@@ -24,6 +24,10 @@ a {
   text-decoration: none;
   color: #33475b;
 }
+a:hover {
+  text-decoration: underline;
+  color: #3387a6;
+}
 #contact {
     border-left: 2px solid #33475b;
     padding-left: 10px;
@@ -31,7 +35,7 @@ a {
 .upper span, a {
   margin: 0 10px;
 }
-.right-header, nav .row ul li, .img-card, .description-card h4, .description-card hr, .description-card ul li, .card, footer>ul>li{
+.right-header, nav .row ul li, .img-card, .description-card h4, .description-card hr, .description-card ul li, .card, footer>ul>li, .dropdown{
   display: inline-block;
 }
 .right-header {
@@ -41,12 +45,17 @@ a {
   padding: 0.5em;
   border-radius: 5px;
   border: 1px solid #ff7a59;
-  color: #ff7a59;
+  color: #ff7a59 !important;
 }
 .arancione {
   background-color: #ff7a59;
-  color: white;
+  color: white !important;
   border: none;
+  text-decoration: none !important;
+}
+.arancione:hover {
+  opacity: 0.5;
+  transition-duration: 0.4s;
 }
 .row::after {
   display: table;
@@ -72,10 +81,87 @@ nav .row ul, .card ul, footer ul{
 nav .row ul li {
   padding-right: 10px;
 }
-nav .row ul li a::after {
+nav .row ul li a {
+  margin-right:5px;
+}
+.d-c-left, .d-c-right-card, .d-c-right, .d-c-r-c-img, .sottotitolo {
+  float: left;
+}
+.dropdown {
+  position: absolute;
+  background-color: rgba(0,0,0,0);
+  border: none;
+}
+.dropdown:hover .dropdown-content, .dropdown-content, .d-c-r-c-description, .sottotitolo {
+  display: block;
+}
+.dropdown:after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: " \f0dd";
+  content: "\f0dd";
+}
+.dropdown-content{
+  /* display: none; */
+  position:absolute;
+  top:100%;
+  right: 100%;
+  z-index: 1;
+  width: 900px;
+  background-color:#f4f9fd;
+  text-align: left;
+  line-height: 1.5em;
+  font-size: 1.3em;
+}
+.dropdown-content, .d-c-right, .d-c-left {
+  border-radius: 20px;
+}
+.dropdown-content h4 {
+  margin: 2% 0;
+  /* font-weight: 400; non funziona il 400 */
+  font-weight: 600;
+}
+.d-c-left {
+  padding: 5%;
+  width: 32%;
+  background-color: #f5f8fa;
+}
+.d-c-right{
+  width: 68%;
+  background-color: white;
+}
+.d-c-right-card {
+  width: 50%;
+  padding: 4% 2%;
+}
+.d-c-r-c-img {
+  width: 12%;
+}
+.d-c-r-c-img img {
+  width: 100%;
+  vertical-align: -webkit-baseline-middle;
+}
+.d-c-r-c-description {
+  display: inline-block;
+  width:88%;
+}
+.dropdown-content a {
+  color: #3387a6;
+  margin:0;
+  font-weight: 600;
+}
+.dropdown-content a:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  content: " \f30b";
+}
+.sottotitolo {
+  width: 100%;
+  border-top: 3px solid #f5f8fa;
+  text-align: center;
+  padding: 2% 0;
+}
+.sottotitolo span {
+  font-weight: bold;
 }
 /* jumbo */
 .jumbotron {
