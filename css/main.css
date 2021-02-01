@@ -24,6 +24,10 @@ a {
   text-decoration: none;
   color: #33475b;
 }
+a:hover {
+  text-decoration: underline;
+  color: #3387a6;
+}
 #contact {
     border-left: 2px solid #33475b;
     padding-left: 10px;
@@ -41,12 +45,17 @@ a {
   padding: 0.5em;
   border-radius: 5px;
   border: 1px solid #ff7a59;
-  color: #ff7a59;
+  color: #ff7a59 !important;
 }
 .arancione {
   background-color: #ff7a59;
-  color: white;
+  color: white !important;
   border: none;
+  text-decoration: none !important;
+}
+.arancione:hover {
+  opacity: 0.5;
+  transition-duration: 0.4s;
 }
 .row::after {
   display: table;
