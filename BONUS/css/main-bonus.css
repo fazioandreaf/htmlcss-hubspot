@@ -92,13 +92,13 @@ nav .row ul li a {
   background-color: rgba(0,0,0,0);
   border: none;
 }
-.dropdown:hover .dropdown-content, .dropdown-content, .d-c-r-c-description, .sottotitolo {
-  display: block;
-}
 .dropdown:after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f0dd";
+}
+.dropdown:hover .dropdown-content, .dropdown-content, .d-c-r-c-description, .sottotitolo, .chat:hover .faq {
+  display: block;
 }
 .dropdown-content{
   display: none;
@@ -236,7 +236,7 @@ main {
   background-color: white;
   border-radius: 7px;
 }
-.first-features, .card, .dropdown-content {
+.first-features, .card, .dropdown-content, .faq {
   box-shadow: 0px 0px 12px 0px lightgrey;
 }
 .img-card {
@@ -412,4 +412,104 @@ footer>.row>a {
 }
 #copyright {
   color: white
+}
+.chat {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+.chat>button {
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: url(../img/1.png);
+  height: 50px;
+  width: 50px;
+  background-size: cover;
+}
+.faq {
+  display: none;
+  position:absolute;
+  bottom:50%;
+  right: 50%;
+  z-index: 1;
+  width: 300px;
+  height: 400px;
+  text-align: left;
+  line-height: 1.5em;
+  border: 0px solid black;
+  border-radius: 5px;
+  background-color: white;
+}
+.f-intestazione {
+  border-radius: 5px 5px 0 0;
+  color: white;
+  vertical-align: middle;
+  height: 55px;
+  background-color: #425b76;
+  border-bottom: 1px solid #f4f9fd;
+  padding-top: 5px;
+}
+.f-intestazione>img {
+  vertical-align: middle;
+  height: 40px;
+  margin: 0 10px;
+}
+.c-container {
+  padding: 1% 10%;
+  position: relative;
+  overflow: auto;
+  height: 180px;
+}
+.c-container>img {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  height: 30px;
+}
+.c-container span {
+  display: inline-block;
+  margin: 2%;
+  margin-left: 6%;
+  background-color: #eaf0f6;
+  color: #73869b;
+  padding: 2% 2%;
+  border-radius: 0px 7px 7px 7px;
+}
+#c-c-span-answer {
+  background-color: white;
+  border: 3px solid #eaf0f6;
+  border-radius: 7px;
+}
+.faq>span {
+  border-top: 2px solid #94abc3;
+  border-bottom: 2px solid #94abc3;
+  display: inline-block;
+  padding: 1% 5%;
+  color:#94abc3;
+  font-size: 0.8em;
+}
+span:nth-child(2) {
+  border: none;
+}
+#text {
+  height: 13%;
+  width:100%;
+  border-top: none ;
+  border-bottom: none ;
+}
+#text input {
+  background-color: #eaf0f6;
+  color: white;
+  padding: 1%;
+  border:none ;
+  border-radius: 3px;
+  height: 3em;
+  width: 85%;
+}
+#text:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  content: " \f1d8";
+  font-size: 2.5em;
+  vertical-align: middle;
 }
