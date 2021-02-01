@@ -101,7 +101,7 @@ nav .row ul li a {
   content: "\f0dd";
 }
 .dropdown-content{
-  /* display: none; */
+  display: none;
   position:absolute;
   top:100%;
   right: 100%;
@@ -163,6 +163,30 @@ nav .row ul li a {
 .sottotitolo span {
   font-weight: bold;
 }
+#resources {
+  background-color: white;
+  width: 630px
+}
+#resources li {
+  display: block;
+  margin-left: 40px;
+}
+#resources ul {
+  display: inline-block;
+  width: 290px;
+  vertical-align: top;
+  margin-top: 6px;
+  margin-left: 10px;
+}
+#resources span {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+#resources img {
+  width: 40px;
+  vertical-align: middle;
+
+}
 /* jumbo */
 .jumbotron {
   height: 600px;
@@ -212,7 +236,7 @@ main {
   background-color: white;
   border-radius: 7px;
 }
-.first-features, .card {
+.first-features, .card, .dropdown-content {
   box-shadow: 0px 0px 12px 0px lightgrey;
 }
 .img-card {
@@ -223,7 +247,7 @@ main {
   padding: 20px 5%;
 }
 .img-card img {
-  width: 70%;
+  width: 71%;
 }
 hr {
   background-color: #899397;
